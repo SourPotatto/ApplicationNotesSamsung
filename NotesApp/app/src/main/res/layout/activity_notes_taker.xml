@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cosmos_bg"
+    android:orientation="vertical"
+    tools:context=".NotesTakerActivity">
+    
+    <Toolbar
+        android:id="@+id/toolBar"
+        android:title="@string/app_name"
+        android:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgSave"
+                android:src="@drawable/save_img"
+                android:padding="4dp"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize">
+            </ImageView>
+        </RelativeLayout>
+    </Toolbar>
+    
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title: "
+        android:textColorHint="@color/grey"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:singleLine="true">
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter note: "
+        android:textColorHint="@color/grey"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white">
+    </EditText>
+
+</LinearLayout>
